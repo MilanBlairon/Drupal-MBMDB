@@ -1,0 +1,34 @@
+services:
+  drupal-app:
+    container_name: drupal-app
+    image: drupal:10-apache
+    ports:
+      - 8080:80
+    volumes:
+      - ./drupal/modules:/var/www/html/modules
+      - ./drupal/profiles:/var/www/html/profiles
+      - ./drupal/themes:/var/www/html/themes
+      - ./drupal/sites:/var/www/html/sites
+    restart: unless-stopped
+  drupal-db:
+    container_name: drupal-db
+    image: mariadb
+    volumes:
+     - ./db/config:/var/lib/mysql
+    environment:
+     - MARIADB_DATABASE=drupal
+     - MARIADB_USER=milan
+     - MARIADB_PASSWORD=vives
+     - MARIADB_ROOT_PASSWORD=root
+     - TZ=Europe/Brussels
+    restart: unless-stopped
+  drupal-dbadmin:
+    container_name: drupal-dbadmin
+    image: phpmyadmin
+    ports:
+     - 8081:80
+    environment:
+     - PMA_HOST=drupal-db
+    depends_on:
+     - drupal-db
+    restart: unless-stopped
