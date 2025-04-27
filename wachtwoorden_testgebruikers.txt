@@ -1,0 +1,31 @@
+db-naam: drupal
+db-gebruikersnaam: milan
+db-wachtwoord: vives
+
+website-gebruikersnaam: Milan
+website-wachtwoord: vives
+website-email: r0981022@student.vives.be
+
+website-gebruikersnaam: admin
+website-wachtwoord: admin
+website-email: admin@gmail.com
+
+website-gebruikersnaam: gebruiker
+website-wachtwoord: gebruiker
+website-email: gebruiker@gmail.com
+
+website-gebruikersnaam: gebruiker2
+website-wachtwoord: gebruiker2
+website-email: gebruiker2@gmail.com
+
+website-gebruikersnaam: junior
+website-wachtwoord: junior
+website-email: junior@gmail.com
+
+website-gebruikersnaam: junioredit
+website-wachtwoord: junioredit
+website-email: junioredit@gmail.com
+
+website-gebruikersnaam: senior
+website-wachtwoord: senior
+website-email: senior@gmail.com
