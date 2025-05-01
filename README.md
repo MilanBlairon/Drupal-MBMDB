@@ -42,8 +42,9 @@ Dit project is gemaakt voor het vak **Webdevelopment 2**. MBMDb is een filmdatab
    - Bezoek `http://localhost:8080` in je webbrowser.
 
 4. (Optioneel) Admin toegang:
-   - **Gebruikersnaam:** `admin`  
-   - **Wachtwoord:** `admin`
+   - **Gebruikersnaam:** `Milan`  
+   - **Wachtwoord:** `vives`
+   Alle wachtwoorden voor overige accounts staan in een TXT bestand op Github!
 
 ---
 
